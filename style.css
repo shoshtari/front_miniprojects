@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    font-size: 16px;
+}
+
+
+@font-face {
+    font-family: digitsNums;
+    src: url('./DigitalNumbers.woff');
+}
+@font-face {
+    font-family: RobotChars;
+    src: url('./RobotoCondensed.woff');
+}
+
+#app{
+    height: 70vh;
+    min-height: 280px;
+    width: 80vw;
+    max-width: 580px;
+    float: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    margin-top: auto;
+}
+#result {
+    text-align: right;
+    font-size: 3.5em;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: #EEE;
+    height: 28%;
+    width: 100%;
+    color: #444;
+    font-family: digitsNums;
+    align-items: center;
+    justify-content: center;
+}
+#keypad{
+    font-family: RobotChars;
+    height: 72%;
+    width: 100%;
+    color: #DDD;
+
+
+}
+#nums{
+    height: 100%;
+    width: 54%;
+    margin: 0;
+    float: left;
+}
+#ops{
+    height: 100%;
+    width: 46%;
+    float: right;
+    margin: 0;
+}
+.key {
+    display: flex;
+    font-size: 1.5em;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lightGreen{
+    background-color: #19676E;
+}
+.darkGreen{
+    background-color: #095057;
+}
+.lightRed{
+    background-color: #D34e47;
+}
+.darkRed{
+    background-color: #B52d26;
+}
+.numKeys{
+    width: calc(100%/3);
+    height: 25%;
+}
+.opsKey{
+    width: 50%;
+    height: 25%;
+}

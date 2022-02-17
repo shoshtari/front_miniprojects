@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script src="script.js"></script>
+</head>
+
+<body>
+<div id="app">
+    <div id="result">1428.57</div>
+    <div id="keypad">
+        <div id="nums">
+                    <div class="key numKeys darkGreen" onclick = "addChar('7')">7</div>
+                    <div class="key numKeys lightGreen" onclick = "addChar('8')">8</div> 
+                    <div class="key numKeys darkGreen" onclick = "addChar('9')">9</div> 
+                    <div class="key numKeys lightGreen" onclick = "addChar('4')">4</div> 
+                    <div class="key numKeys darkGreen" onclick = "addChar('5')">5</div> 
+                    <div class="key numKeys lightGreen" onclick = "addChar('6')">6</div> 
+                    <div class="key numKeys darkGreen" onclick = "addChar('1')">1</div> 
+                    <div class="key numKeys lightGreen" onclick = "addChar('2')">2</div> 
+                    <div class="key numKeys darkGreen" onclick = "addChar('3')">3</div> 
+                    <div class="key numKeys lightGreen" onclick = "addChar('0')">0</div>  
+                    <div class="key numKeys darkGreen" onclick = "addChar('.')">.</div> 
+                    <div class="key numKeys lightGreen" onclick = "calc()"> = </div>
+        </div>
+        <div id="ops">
+            <div class="key opsKey lightRed" onclick="addChar('*')"> × </div>
+            <div class="key opsKey darkRed" onclick="reset()"> CE </div>
+            <div class="key opsKey darkRed" onclick="addChar('-')"> - </div>
+            <div class="key opsKey lightRed" onclick="memRead()" > MR </div>
+            <div class="key opsKey lightRed" onclick="addChar('+')"> + </div>
+            <div class="key opsKey darkRed" onclick="memPlus(0)"> M- </div>
+            <div class="key opsKey darkRed" onclick="addChar('/')"> ÷ </div>
+            <div class="key opsKey lightRed" onclick="memPlus(1)"> M+ </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
